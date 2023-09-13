@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(#cc2b5e , #753a88);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    color: #0ef;
+    font-size: 60px;
+    text-decoration: underline;
+    text-underline-offset: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.input-group {
+    width: 50% !important;
+}
+
+#basic-addon2 {
+    background-color: #30A1D7;
+    color: #fff;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    background-color: #30A1D7;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled):hover {
+    background-color: rgb(14, 193, 206);
+    color: #fff;
+}
+
+#inputValue{
+    font-weight: 600;
+    font-size: 16px;
+    padding: 2%;
+}
+
+#inputValue:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.main-content {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#basic-addon2 {
+    cursor: pointer;
+}
+
+.list-group {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+    [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+        font-size: 12px;
+    }
+    #todoList span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 760px) {
+    [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+        font-size: 11px;
+        margin: 0 6px;
+        padding: 4px 10px;
+    }
+    .fo-text {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    #todoList {
+        width: 100%;
+    }
+    .heading {
+        font-size: 34px;
+    }
+    .input-group {
+        width: 100% !important;
+    }
+    #basic-addon2 {
+        cursor: pointer;
+        font-size: 12px;
+    }  
+    #inputValue{
+        font-weight: 600;
+        font-size: 14px;
+        padding: 10px;
+    }  
+}
